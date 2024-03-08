@@ -142,8 +142,8 @@
             miniTongji = layui.miniTongji;
 
         var options = {
-            iniUrl: "api/init.json",    // 初始化接口
-            clearUrl: "api/clear.json", // 缓存清理接口
+                iniUrl: "/layuimini-v2/api/init.json",    // 初始化接口
+                clearUrl: "/layuimini-v2/api/clear.json", // 缓存清理接口
             urlHashLocation: true,      // 是否打开hash定位
             bgColorDefault: false,      // 主题默认配置
             multiModule: true,          // 是否开启多模块
@@ -166,7 +166,7 @@
 
         $('.login-out').on("click", function () {
             layer.msg('退出登录成功', function () {
-                window.location = 'page/login-3.html';
+                    window.location = '~/layuimini-v2/page/login-3.html';
             });
         });
     });
